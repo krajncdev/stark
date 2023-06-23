@@ -1,0 +1,253 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
+  }
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-UltraBold.eot');
+  src: local('Armin Grotesk UltraBold'), local('ArminGrotesk-UltraBold'),
+    url('./assets/fonts/ArminGrotesk-UltraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-UltraBold.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-UltraBold.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-UltraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-SemiBold.eot');
+  src: local('Armin Grotesk SemiBold'), local('ArminGrotesk-SemiBold'),
+    url('./assets/fonts/ArminGrotesk-SemiBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-SemiBold.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-SemiBold.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-SemiBoldItalic.eot');
+  src: local('Armin Grotesk SemiBold Italic'),
+    local('ArminGrotesk-SemiBoldItalic'),
+    url('./assets/fonts/ArminGrotesk-SemiBoldItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-SemiBoldItalic.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-SemiBoldItalic.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-Regular.eot');
+  src: local('Armin Grotesk Regular'), local('ArminGrotesk-Regular'),
+    url('./assets/fonts/ArminGrotesk-Regular.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-Regular.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-Regular.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-Black.eot');
+  src: local('Armin Grotesk Black'), local('ArminGrotesk-Black'),
+    url('./assets/fonts/ArminGrotesk-Black.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-Black.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-Black.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-UltraLightItalic.eot');
+  src: local('Armin Grotesk UltraLight Italic'),
+    local('ArminGrotesk-UltraLightItalic'),
+    url('./assets/fonts/ArminGrotesk-UltraLightItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-UltraLightItalic.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-UltraLightItalic.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-UltraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk Normal';
+  src: url('./assets/fonts/ArminGrotesk-NormalItalic.eot');
+  src: local('Armin Grotesk Normal Italic'), local('ArminGrotesk-NormalItalic'),
+    url('./assets/fonts/ArminGrotesk-NormalItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-NormalItalic.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-NormalItalic.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-NormalItalic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-Italic.eot');
+  src: local('Armin Grotesk Italic'), local('ArminGrotesk-Italic'),
+    url('./assets/fonts/ArminGrotesk-Italic.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-Italic.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-Italic.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-Thin.eot');
+  src: local('Armin Grotesk Thin'), local('ArminGrotesk-Thin'),
+    url('./assets/fonts/ArminGrotesk-Thin.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-Thin.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-Thin.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-ThinItalic.eot');
+  src: local('Armin Grotesk Thin Italic'), local('ArminGrotesk-ThinItalic'),
+    url('./assets/fonts/ArminGrotesk-ThinItalic.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-ThinItalic.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-ThinItalic.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-Light.eot');
+  src: local('Armin Grotesk Light'), local('ArminGrotesk-Light'),
+    url('./assets/fonts/ArminGrotesk-Light.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-Light.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-Light.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-Bold.eot');
+  src: local('Armin Grotesk Bold'), local('ArminGrotesk-Bold'),
+    url('./assets/fonts/ArminGrotesk-Bold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-Bold.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-Bold.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Armin Grotesk';
+  src: url('./assets/fonts/ArminGrotesk-ExtraBold.eot');
+  src: local('Armin Grotesk ExtraBold'), local('ArminGrotesk-ExtraBold'),
+    url('./assets/fonts/ArminGrotesk-ExtraBold.eot?#iefix')
+      format('embedded-opentype'),
+    url('./assets/fonts/ArminGrotesk-ExtraBold.woff2') format('woff2'),
+    url('./assets/fonts/ArminGrotesk-ExtraBold.woff') format('woff'),
+    url('./assets/fonts/ArminGrotesk-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
