@@ -12,6 +12,15 @@ module.exports = {
         '2xl': '1400px',
       },
     },
+    screens: {
+      xxs: '350px',
+      xs: '25rem',
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       spacing: {
         headerHeight: '4rem',
@@ -63,6 +72,7 @@ module.exports = {
         purple: '#381fd1',
         beige: '#f6f6e8',
         pink: '#fc6f6b',
+        blue: '#10284b',
         purple2: '#a599f0',
         destructive: {
           DEFAULT: 'hsl(var(--destructive))',
@@ -134,9 +144,6 @@ module.exports = {
         'spin-left': 'spin-left 30s linear infinite',
         'expand-bg': 'expandBg ease-in-out 5s infinite alternate-reverse',
         scroll: 'scroll 60s linear infinite',
-      },
-      screens: {
-        xs: '25rem',
       },
     },
   },

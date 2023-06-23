@@ -5,7 +5,7 @@ import FeaturesGridText from './ui/Text/FeaturesGridText';
 const FeaturesGrid = () => {
   //backgrounds can be: bg-teal bg-secondary bg-pink and bg-purple2
   return (
-    <div className='grid grid-cols-1 md:grid-cols-2 gap-5 w-full mt-16 mb-24'>
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-5 w-full mt-16 mb-24 relative z-10'>
       <FeaturesGridItemContainer color='teal' className='md:row-span-2'>
         <img
           src='https://images.getstark.co/marketing/features/contrast__052023.webp'

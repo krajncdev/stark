@@ -42,3 +42,18 @@ export interface IGetStartedListItem {
   link: string;
   buttonText: string;
 }
+
+export interface IFooterNavigationListItem {
+  id: number;
+  content: string;
+  subList: {
+    id: number;
+    content: string;
+  }[];
+}
+
+export interface ImageListItem {
+  id: number;
+  src: string;
+  alt: string;
+}

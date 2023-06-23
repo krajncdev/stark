@@ -1,6 +1,7 @@
 import AfterHeroSection from './components/AfterHeroSection';
 import CompaniesTicker from './components/CompaniesTicker';
 import FeaturesSection from './components/FeaturesSection';
+import Footer from './components/Footer';
 import GetStartedSection from './components/GetStartedSection';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -48,6 +49,7 @@ function App() {
         <LocalCommunitySection />
         <GetStartedSection />
         <FeaturesSection />
+        <Footer />
       </main>
     </>
   );

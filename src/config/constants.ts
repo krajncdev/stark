@@ -15,11 +15,13 @@ import LivePreviewImage from '../components/ui/Images/LivePreviewImage';
 import SuperPowerImage from '../components/ui/Images/SuperpowerImage';
 import {
   ICompaniesListItem,
+  IFooterNavigationListItem,
   IGetStartedListItem,
   ILeftRightSectionListItem,
   IMeetTheSuitListItem,
   INavigationListItem,
   ITestimonialListItem,
+  ImageListItem,
 } from './types';
 
 export const navigationList: INavigationListItem[] = [
@@ -220,5 +222,96 @@ export const getStartedList: IGetStartedListItem[] = [
     p: 'From Alt-Text and Typography to Touch Targets and Suggestions, there’s much more you can do with a Pro account.',
     link: 'https://www.getstark.co/pricing/',
     buttonText: 'Compare plans',
+  },
+];
+
+export const footerTitle = 'Made remotely with love by Stark Lab, Inc.';
+export const footerIntro = 'Stark Lab, Inc. Copyright 2023';
+export const footerNavigationList: IFooterNavigationListItem[] = [
+  {
+    id: 0,
+    content: 'Product',
+    subList: [
+      { id: 0, content: 'Stark for Figma' },
+      { id: 1, content: 'Stark for FigJam' },
+      { id: 2, content: 'Stark for Sketch' },
+      { id: 3, content: 'Stark for Adobe XD' },
+      { id: 4, content: 'Stark for Chrome' },
+      { id: 5, content: 'Stark for Firefox' },
+      { id: 6, content: 'Stark for Edge' },
+      { id: 7, content: 'Stark for Safari' },
+      { id: 8, content: 'Stark for Arc' },
+      { id: 9, content: 'Stark for Brave' },
+    ],
+  },
+  {
+    id: 1,
+    content: 'Resources',
+    subList: [
+      { id: 0, content: 'Blog' },
+      { id: 1, content: 'Library' },
+      { id: 2, content: 'Release Notes' },
+    ],
+  },
+  {
+    id: 2,
+    content: 'Help',
+    subList: [
+      { id: 0, content: 'My Account' },
+      { id: 1, content: 'Support Docs' },
+      { id: 2, content: 'Contact Us' },
+      { id: 3, content: 'Feature Requests' },
+    ],
+  },
+  {
+    id: 3,
+    content: 'Company',
+    subList: [
+      { id: 0, content: 'Press Releases' },
+      { id: 1, content: 'Privacy Policy' },
+      { id: 2, content: 'Cookie Policy' },
+      { id: 3, content: 'Security Overview' },
+      { id: 4, content: 'Status' },
+      { id: 5, content: 'Terms of Service' },
+      { id: 6, content: 'Code of Conduct' },
+    ],
+  },
+];
+
+export const footerCompaniesList: ImageListItem[] = [
+  {
+    id: 0,
+    src: 'https://images.getstark.co/marketing/social-media/twitter.png',
+    alt: 'twitter-logo',
+  },
+  {
+    id: 1,
+    src: 'https://images.getstark.co/marketing/social-media/instagram.png',
+    alt: 'instagram-logo',
+  },
+  {
+    id: 2,
+    src: 'https://images.getstark.co/marketing/social-media/slack.png',
+    alt: 'slack-logo',
+  },
+  {
+    id: 3,
+    src: 'https://images.getstark.co/marketing/social-media/share-linkedin.webp',
+    alt: 'linkedin-logo',
+  },
+  {
+    id: 4,
+    src: 'https://images.getstark.co/marketing/social-media/youtube.png',
+    alt: 'youtube-logo',
+  },
+  {
+    id: 5,
+    src: 'https://images.getstark.co/marketing/social-media/dribbble.png',
+    alt: 'dribble-logo',
+  },
+  {
+    id: 6,
+    src: 'https://images.getstark.co/marketing/social-media/meetup.png',
+    alt: 'meetup-logo',
   },
 ];

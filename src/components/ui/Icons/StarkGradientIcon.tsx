@@ -16,8 +16,8 @@ const StarkGradientIcon = () => {
       ></rect>
       <g filter='url(#filter0_di_2312_20415)'>
         <path
-          fill-rule='evenodd'
-          clip-rule='evenodd'
+          fillRule='evenodd'
+          clipRule='evenodd'
           d='M77.5151 124.577V111.146C86.7076 111.945 95.7826 108.635 102.301 102.104C112.684 91.7201 114.443 75.511 106.529 63.1417L63.3346 106.332L53.7049 115.961C51.9015 114.628 50.2001 113.163 48.615 111.577C31.1745 94.1382 31.1745 65.8629 48.615 48.4227C57.6416 39.3769 70.1185 34.6425 82.8743 35.4231V48.8545C73.6818 48.0547 64.6068 51.3651 58.0889 57.8959C47.7056 68.2799 45.9466 84.489 53.8606 96.8583L97.0548 53.6687L106.685 44.0399C108.488 45.3723 110.19 46.8377 111.775 48.4236C129.215 65.8626 129.215 94.1378 111.775 111.578C102.748 120.624 90.2709 125.358 77.5151 124.577Z'
           fill='white'
         ></path>
@@ -30,9 +30,9 @@ const StarkGradientIcon = () => {
           width='100.194'
           height='100.194'
           filterUnits='userSpaceOnUse'
-          color-interpolation-filters='sRGB'
+          colorInterpolationFilters='sRGB'
         >
-          <feFlood flood-opacity='0' result='BackgroundImageFix'></feFlood>
+          <feFlood floodOpacity='0' result='BackgroundImageFix'></feFlood>
           <feColorMatrix
             in='SourceAlpha'
             type='matrix'
@@ -88,8 +88,8 @@ const StarkGradientIcon = () => {
           y2='160'
           gradientUnits='userSpaceOnUse'
         >
-          <stop stop-color='#7E6DE9'></stop>
-          <stop offset='1' stop-color='#381FD1'></stop>
+          <stop stopColor='#7E6DE9'></stop>
+          <stop offset='1' stopColor='#381FD1'></stop>
         </linearGradient>
       </defs>
     </svg>
